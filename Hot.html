@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/styles-Hot.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/asset/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/asset/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/asset/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/asset/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/asset/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/asset/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/asset/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/asset/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/asset/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/asset/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
+    <title>Thịnh hành - YouTube</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-left">
+            <i class="fas fa-bars header-bar" ></i>
+            <a href="Home.html">
+                <div class="logo"><img class="img-logo" src="./asset/img/logo.png">
+                <span class="span-logo">VN</span></div>
+            </a>
+        </div>
+        <div class="search header-mid" >
+            <div class="search1">
+                <input class="input-search" type = "search" placeholder="Tìm kiếm">
+                <i class="fa-regular fa-keyboard header_keyboard"></i>
+                <i class="fa-solid fa-magnifying-glass header_glass"></i>
+            </div>
+            <div class="search2">
+                <button class="header_micro"><i class="fa-solid fa-microphone" ></i></button>
+            </div>
+        </div>
+        <div class="action header-right">
+            <div class="action1">
+                <a><i class="fa-solid fa-ellipsis-vertical header_dots"></i></a>
+                <div class="action1-menu">
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <a href="https://myaccount.google.com/u/0/yourdata/youtube?hl=vi">Dữ liệu của bạn trong Youtube</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-regular fa-moon"></i>
+                        <div></div>
+                        <a href="">Giao diện: Giao diện thiết bị</a>
+                        
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-language"></i>
+                        <a href="">Ngôn ngữ: Tiếng Viết</a>
+                    </div>
+                    <div class="action1-menu-1" onclick="changeText()">
+                        <i class="fa-solid fa-shield"></i>
+                        <p id="textToChange" >Chế độ hạn chế: Đang bật</p>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="">Địa điểm: Việt Nam</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <a href="">Phím tắt</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="">Cài đặt</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <a href="">Trợ giúp</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <a href="">Gửi ý kiến phản hồi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="action2">
+                <a href="SignUp.html" class="register-button">
+                    <i class="fa-regular fa-circle-user img-user"></i>
+                    <span class="userspan"> Đăng nhập</span>
+                </a>
+            </div>
+        </div>        
+    </header>
+    <main class="main">
+        <div class="main-nav">
+            <div class="sidebar">
+                <a href="./Home.html" class="sidebar-item">
+                    <img src="./asset/icon/icon19.svg" alt="">
+                    <div class="sidebar-item-title">Trang chủ</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon2.svg" alt="">
+                    <div class="sidebar-item-title">Shorts</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon3.svg" alt="">
+                    <div class="sidebar-item-title">Kênh đăng kí</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon4.svg" alt="">
+                    <div class="sidebar-item-title">Thư viện</div>
+                </a >
+                <a href="#!" class="sidebar-item ">
+                    <img src="./asset/icon/icon5.svg" alt="">
+                    <div class="sidebar-item-title">Video đã xem</div>
+                </a >
+                <div class="line-1"></div>
+                <div  class="sidebar-item sidebar-item-1" style="background-color: white !important;">
+                    <p>Hãy đăng nhập để thích video, bình luận và đăng kí kênh.</p>
+                    <div class="action2">
+                        <a href="SignUp.html" class="register-button">
+                            <i class="fa-regular fa-circle-user img-user"></i>
+                            <span class="userspan"> Đăng nhập</span>
+                        </a>
+                    </div>
+                </div >
+                <div class="line-1"></div>
+                <div class="sidebar-item">
+                    <p style="font-size: 16px; margin-top: 10px;" style="background-color: white !important;">Khám phá</p>
+                </div>
+                <a style="background-color: #c8c8c8; border-radius: 6px;" href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon20.svg" alt="">
+                    <div class="sidebar-item-title">Thịnh hành</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon7.svg" alt="">
+                    <div class="sidebar-item-title">Âm nhạc</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon8.svg" alt="">   
+                    <div class="sidebar-item-title">Trò chơi</div>
+                </a >
+                <a href="News.html" class="sidebar-item">
+                    <img src="./asset/icon/icon9.svg" alt="">
+                    <div class="sidebar-item-title">Tin tức</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon10.svg" alt="">
+                    <div class="sidebar-item-title">Thể thao</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item" >
+                    <img src="./asset/icon/icon11.svg" alt="">
+                    <div class="sidebar-item-title">Xem qua các kênh</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item" style="background-color: white !important;">
+                    <p>Dịch vụ khác của youtube</p>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon12.svg" alt="">
+                    <div class="sidebar-item-title">Youtube Premium</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon13.svg" alt="">
+                    <div class="sidebar-item-title">Yoiutube Music</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon14.svg" alt="">
+                    <div class="sidebar-item-title">Youtube Kids</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon15.svg" alt="">
+                    <div class="sidebar-item-title">Cài đặt</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon16.svg" alt="">
+                    <div class="sidebar-item-title">Nhật kí báo cáo</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon17.svg" alt="">
+                    <div class="sidebar-item-title">Trợ giúp</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon18.svg" alt="">
+                    <div class="sidebar-item-title">Gửi ý kiến phản hồi</div>
+                </a >
+                <div class="line-1"></div>
+            </div>
+            <div class="sidebar-1">
+                <a href="./Home.html" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon19.svg" alt="">
+                    <div class="sidebar-1-item-title">Trang chủ</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon2.svg" alt="">
+                    <div class="sidebar-1-item-title">Shorts</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon3.svg" alt="">
+                    <div class="sidebar-1-item-title">Kênh đăng kí</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon4.svg" alt="">
+                    <div class="sidebar-1-item-title">Thư viện</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon5.svg" alt="">
+                    <div class="sidebar-1-item-title">Video đã xem</div>
+                </a >
+            </div>
+        </div>    
+        <div class="container">
+            <div class="container1">
+                <img class="img-hot" src="./asset/img/hot.png" alt="">
+                <span class="title-hot">Thịnh hành</span>
+            </div>
+            <div class="container3">
+                <div id="container3-item" class="container3-item">Mới nhất</div>
+                <div class="container3-item">Âm nhạc</div>
+                <div class="container3-item">Trò chơi</div>
+                <div class="container3-item">Hình ảnh</div>
+            </div>
+            <div class="line-1"></div>
+            <div class="container2">
+                <div class="list">
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">Mixi Gamming</a>
+                                    <div class="video-title-1-span"> 36 N lượt xem - 10 Ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">2 Ngày 1 Đêm Mùa 2 | Tập 38: Trường Giang đóng vai kẻ phản diện, HIEUTHUHAI bị đưa vào tròng Tuần này dàn cast và khách mời sẽ trải qua những thử thách...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid8.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">aespa 에스파 'Drama' MV</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">SMTOWN</a>
+                                    <div class="video-title-1-span"> 46 Tr lượt xem - 6 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">aespa's 4th Mini Album "Drama" is out! Listen and download on your favorite platform: https://aespa.lnk.to/DramaMiniAlbum [Tracklist] 01 Drama 02 Trick or Trick 03 Don't Blink 04 Hot Air...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid9.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">TÌM EM CÂU VÍ SÔNG LAM - A PÁO | Tiếng hát dạt dào cảm xúc của người con xứ Nghệ A Páo</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">MEGA GS MUSIC</a>
+                                    <div class="video-title-1-span">3 Tr lượt xem - 9 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">#SanChienGiongHatMua5 #MegaGSMusic #MegaGS #apao #tap9 TÌM EM CÂU VÍ SÔNG LAM - A PÁO | Tiếng hát dạt dào cảm xúc của người con xứ Nghệ A Páo Xem tập full tại đây:...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid0.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">[NHẠC CHẾ] - Đại Tỷ Yến Phần 5 | Tuna Lee</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">Tuna Lee</a>
+                                    <div class="video-title-1-span">3,3 Tr lượt xem - 11 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">2 Ngày 1 Đêm Mùa 2 | Tập 38: Trường Giang đóng vai kẻ phản diện, HIEUTHUHAI bị đưa vào tròng Tuần này dàn cast và khách mời sẽ trải qua những thử thách...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">Mixi Gamming</a>
+                                    <div class="video-title-1-span"> 36 N lượt xem - 10 Ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">2 Ngày 1 Đêm Mùa 2 | Tập 38: Trường Giang đóng vai kẻ phản diện, HIEUTHUHAI bị đưa vào tròng Tuần này dàn cast và khách mời sẽ trải qua những thử thách...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid8.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">aespa 에스파 'Drama' MV</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">SMTOWN</a>
+                                    <div class="video-title-1-span"> 46 Tr lượt xem - 6 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">aespa's 4th Mini Album "Drama" is out! Listen and download on your favorite platform: https://aespa.lnk.to/DramaMiniAlbum [Tracklist] 01 Drama 02 Trick or Trick 03 Don't Blink 04 Hot Air...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid9.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">TÌM EM CÂU VÍ SÔNG LAM - A PÁO | Tiếng hát dạt dào cảm xúc của người con xứ Nghệ A Páo</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">MEGA GS MUSIC</a>
+                                    <div class="video-title-1-span">3 Tr lượt xem - 9 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">#SanChienGiongHatMua5 #MegaGSMusic #MegaGS #apao #tap9 TÌM EM CÂU VÍ SÔNG LAM - A PÁO | Tiếng hát dạt dào cảm xúc của người con xứ Nghệ A Páo Xem tập full tại đây:...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid0.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">[NHẠC CHẾ] - Đại Tỷ Yến Phần 5 | Tuna Lee</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">Tuna Lee</a>
+                                    <div class="video-title-1-span">3,3 Tr lượt xem - 11 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">2 Ngày 1 Đêm Mùa 2 | Tập 38: Trường Giang đóng vai kẻ phản diện, HIEUTHUHAI bị đưa vào tròng Tuần này dàn cast và khách mời sẽ trải qua những thử thách...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">Mixi Gamming</a>
+                                    <div class="video-title-1-span"> 36 N lượt xem - 10 Ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">2 Ngày 1 Đêm Mùa 2 | Tập 38: Trường Giang đóng vai kẻ phản diện, HIEUTHUHAI bị đưa vào tròng Tuần này dàn cast và khách mời sẽ trải qua những thử thách...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid8.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">aespa 에스파 'Drama' MV</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">SMTOWN</a>
+                                    <div class="video-title-1-span"> 46 Tr lượt xem - 6 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">aespa's 4th Mini Album "Drama" is out! Listen and download on your favorite platform: https://aespa.lnk.to/DramaMiniAlbum [Tracklist] 01 Drama 02 Trick or Trick 03 Don't Blink 04 Hot Air...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid9.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">TÌM EM CÂU VÍ SÔNG LAM - A PÁO | Tiếng hát dạt dào cảm xúc của người con xứ Nghệ A Páo</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">MEGA GS MUSIC</a>
+                                    <div class="video-title-1-span">3 Tr lượt xem - 9 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">#SanChienGiongHatMua5 #MegaGSMusic #MegaGS #apao #tap9 TÌM EM CÂU VÍ SÔNG LAM - A PÁO | Tiếng hát dạt dào cảm xúc của người con xứ Nghệ A Páo Xem tập full tại đây:...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <a href="#!">
+                                <video class="video" id="myVideo" controls muted>
+                                    <source src="./asset/video/vid0.mp4" type="video/mp4">
+                                </video>
+                            </a>
+                        </div>
+                        <div class="underVideo">
+                            <div class="video-title">
+                                <div class="video-title-1"><a href="./Mixi.html">[NHẠC CHẾ] - Đại Tỷ Yến Phần 5 | Tuna Lee</a></div>
+                                <div class="video-title-2">
+                                    <a class="video-title-2-1" href="./Chanel.html">Tuna Lee</a>
+                                    <div class="video-title-1-span">3,3 Tr lượt xem - 11 ngày trước</div>                                       
+                                </div>
+                                <span class="video-title-1-span">2 Ngày 1 Đêm Mùa 2 | Tập 38: Trường Giang đóng vai kẻ phản diện, HIEUTHUHAI bị đưa vào tròng Tuần này dàn cast và khách mời sẽ trải qua những thử thách...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./asset/js/script-Hot.js"></script>
+</body>
+</html>

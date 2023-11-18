@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/styles-News.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/asset/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/asset/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/asset/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/asset/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/asset/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/asset/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/asset/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/asset/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/asset/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/asset/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
+    <title>Tin tức - YouTube</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-left">
+            <i class="fas fa-bars header-bar" ></i>
+            <a href="Home.html">
+                <div class="logo"><img class="img-logo" src="./asset/img/logo.png">
+                <span class="span-logo">VN</span></div>
+            </a>
+        </div>
+        <div class="search header-mid" >
+            <div class="search1">
+                <input class="input-search" type = "search" placeholder="Tìm kiếm">
+                <i class="fa-regular fa-keyboard header_keyboard"></i>
+                <i class="fa-solid fa-magnifying-glass header_glass"></i>
+            </div>
+            <div class="search2">
+                <button class="header_micro"><i class="fa-solid fa-microphone" ></i></button>
+            </div>
+        </div>
+        <div class="action header-right">
+            <div class="action1">
+                <a><i class="fa-solid fa-ellipsis-vertical header_dots"></i></a>
+                <div class="action1-menu">
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <a href="https://myaccount.google.com/u/0/yourdata/youtube?hl=vi">Dữ liệu của bạn trong Youtube</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-regular fa-moon"></i>
+                        <div></div>
+                        <a href="">Giao diện: Giao diện thiết bị</a>
+                        
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-language"></i>
+                        <a href="">Ngôn ngữ: Tiếng Viết</a>
+                    </div>
+                    <div class="action1-menu-1" onclick="changeText()">
+                        <i class="fa-solid fa-shield"></i>
+                        <p id="textToChange" >Chế độ hạn chế: Đang bật</p>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="">Địa điểm: Việt Nam</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <a href="">Phím tắt</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="">Cài đặt</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <a href="">Trợ giúp</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <a href="">Gửi ý kiến phản hồi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="action2">
+                <a href="SignUp.html" class="register-button">
+                    <i class="fa-regular fa-circle-user img-user"></i>
+                    <span class="userspan"> Đăng nhập</span>
+                </a>
+            </div>
+        </div>        
+    </header>
+    <main class="main">
+        <div class="main-nav">
+            <div class="sidebar">
+                <a href="./Home.html" class="sidebar-item">
+                    <img src="./asset/icon/icon19.svg" alt="">
+                    <div class="sidebar-item-title">Trang chủ</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon2.svg" alt="">
+                    <div class="sidebar-item-title">Shorts</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon3.svg" alt="">
+                    <div class="sidebar-item-title">Kênh đăng kí</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon4.svg" alt="">
+                    <div class="sidebar-item-title">Thư viện</div>
+                </a >
+                <a href="#!" class="sidebar-item ">
+                    <img src="./asset/icon/icon5.svg" alt="">
+                    <div class="sidebar-item-title">Video đã xem</div>
+                </a >
+                <div class="line-1"></div>
+                <div  class="sidebar-item sidebar-item-1" style="background-color: white !important;">
+                    <p>Hãy đăng nhập để thích video, bình luận và đăng kí kênh.</p>
+                    <div class="action2">
+                        <a href="SignUp.html" class="register-button">
+                            <i class="fa-regular fa-circle-user img-user"></i>
+                            <span class="userspan"> Đăng nhập</span>
+                        </a>
+                    </div>
+                </div >
+                <div class="line-1"></div>
+                <div class="sidebar-item">
+                    <p style="font-size: 16px; margin-top: 10px;" style="background-color: white !important;">Khám phá</p>
+                </div>
+                <a href="h" class="sidebar-item">
+                    <img src="./asset/icon/icon6.svg" alt="">
+                    <div class="sidebar-item-title">Thịnh hành</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon7.svg" alt="">
+                    <div class="sidebar-item-title">Âm nhạc</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon8.svg" alt="">   
+                    <div class="sidebar-item-title">Trò chơi</div>
+                </a >
+                <a style="background-color: #c8c8c8; border-radius: 6px;" href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon22.svg" alt="">
+                    <div class="sidebar-item-title">Tin tức</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon10.svg" alt="">
+                    <div class="sidebar-item-title">Thể thao</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item" >
+                    <img src="./asset/icon/icon11.svg" alt="">
+                    <div class="sidebar-item-title">Xem qua các kênh</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item" style="background-color: white !important;">
+                    <p>Dịch vụ khác của youtube</p>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon12.svg" alt="">
+                    <div class="sidebar-item-title">Youtube Premium</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon13.svg" alt="">
+                    <div class="sidebar-item-title">Yoiutube Music</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon14.svg" alt="">
+                    <div class="sidebar-item-title">Youtube Kids</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon15.svg" alt="">
+                    <div class="sidebar-item-title">Cài đặt</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon16.svg" alt="">
+                    <div class="sidebar-item-title">Nhật kí báo cáo</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon17.svg" alt="">
+                    <div class="sidebar-item-title">Trợ giúp</div>
+                </a >
+                <a href="#!" class="sidebar-item">
+                    <img src="./asset/icon/icon18.svg" alt="">
+                    <div class="sidebar-item-title">Gửi ý kiến phản hồi</div>
+                </a >
+                <div class="line-1"></div>
+            </div>
+            <div class="sidebar-1">
+                <a href="./Home.html" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon19.svg" alt="">
+                    <div class="sidebar-1-item-title">Trang chủ</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon2.svg" alt="">
+                    <div class="sidebar-1-item-title">Shorts</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon3.svg" alt="">
+                    <div class="sidebar-1-item-title">Kênh đăng kí</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon4.svg" alt="">
+                    <div class="sidebar-1-item-title">Thư viện</div>
+                </a >
+                <a href="#!" class="sidebar-1-item">
+                    <img class="sidebar-img" src="./asset/icon/icon5.svg" alt="">
+                    <div class="sidebar-1-item-title">Video đã xem</div>
+                </a >
+            </div>
+        </div>    
+        <div class="container">
+            <div class="container1">
+                <img class="img-hot" src="./asset/img/news.jpg" alt="">
+                <span class="title-hot">Tin tức</span>
+            </div>
+            <div class="container3">
+                <div id="container3-item" class="container3-item">Tin nổi bật</div>
+                <div class="container3-item">Thể thao</div>
+                <div class="container3-item">Giải trí</div>
+                <div class="container3-item">Kinh doanh</div>
+                <div class="container3-item">Công nghệ</div>
+                <div class="container3-item">Thế giới</div>
+                <div class="container3-item">Trong nước</div>
+                <div class="container3-item">Khoa học</div>
+            </div>
+            <div class="line-1"></div>
+            <div class="container-item2">
+                <div class="container-item2-1">
+                    <div style="display: flex; padding: 25px 15px 25px 5px; font-size: 20px; font-family: sans-serif;">
+                        Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                    <div class="list more-list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                    <div class="list-more">
+                        <div class="list-more-2"></div>
+                        <div id="textToChange1" class="list-more-1" onclick="changeText1()">Hiện thêm</div>
+                        <div class="list-more-2"></div>
+                    </div>
+                </div>
+                <div class="container-item2-1">
+                    <div style="display: flex; padding: 25px 15px 25px 5px; font-size: 20px; font-family: sans-serif;">
+                        Trực tiếp: Tin tức
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class="line-1"></div>
+                <div class="container-item2-1">
+                    <div style="display: flex; padding: 25px 15px 25px 5px;  font-size: 20px; font-family: sans-serif;">
+                        Hà Nội: Người sống ở tầng cao chung cư cảm thấy rung lắc bất ngờ | Tin tức mới nhất 17/11
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid3.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="#!">Ô tô chết máy đầy đường, xếp hàng dài tại các gara chờ sửa chữa sau lụt ở Huế</a></div>
+                                    <div class="video-title-2"><a style="color: #555555;" href="#!">Báo tuổi trẻ</a></div>
+                                    <div><span class="video-title-1-span">8.3 N lượt xem - 1 Giờ trước</span></div>
+                                </div>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./asset/js/script-News.js"></script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/styles-Chanel.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/asset/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/asset/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/asset/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/asset/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/asset/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/asset/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/asset/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/asset/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/asset/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/asset/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
+    <title>Chanel</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header-left">
+            <i class="fas fa-bars header-bar" ></i>
+            <a href="Home.html">
+                <div class="logo"><img class="img-logo" src="./asset/img/logo.png">
+                <span class="span-logo">VN</span></div>
+            </a>
+        </div>
+        <div class="search header-mid" >
+            <div class="search1">
+                <input class="input-search" type = "search" placeholder="Tìm kiếm">
+                <i class="fa-regular fa-keyboard header_keyboard"></i>
+                <i class="fa-solid fa-magnifying-glass header_glass"></i>
+            </div>
+            <div class="search2">
+                <button class="header_micro"><i class="fa-solid fa-microphone" ></i></button>
+            </div>
+        </div>
+        <div class="action header-right">
+            <div class="action1">
+                <a><i class="fa-solid fa-ellipsis-vertical header_dots"></i></a>
+                <div class="action1-menu">
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <a href="https://myaccount.google.com/u/0/yourdata/youtube?hl=vi">Dữ liệu của bạn trong Youtube</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-regular fa-moon"></i>
+                        <div></div>
+                        <a href="">Giao diện: Giao diện thiết bị</a>
+                        
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-language"></i>
+                        <a href="">Ngôn ngữ: Tiếng Viết</a>
+                    </div>
+                    <div class="action1-menu-1" onclick="changeText()">
+                        <i class="fa-solid fa-shield"></i>
+                        <p id="textToChange" >Chế độ hạn chế: Đang bật</p>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="">Địa điểm: Việt Nam</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <a href="">Phím tắt</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="">Cài đặt</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <a href="">Trợ giúp</a>
+                    </div>
+                    <div class="action1-menu-1">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <a href="">Gửi ý kiến phản hồi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="action2">
+                <a href="SignUp.html" class="register-button">
+                    <i class="fa-regular fa-circle-user img-user"></i>
+                    <span class="userspan"> Đăng nhập</span>
+                </a>
+            </div>
+        </div>        
+    </header>
+    <main class="main">
+        <div class="main-nav">
+            <div class="slidebar">
+                <a href="./Home.html" class="slidebar-item">
+                    <img src="./asset/icon/icon19.svg" alt="">
+                    <div class="slidebar-item-title">Trang chủ</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon2.svg" alt="">
+                    <div class="slidebar-item-title">Shorts</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon3.svg" alt="">
+                    <div class="slidebar-item-title">Kênh đăng kí</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon4.svg" alt="">
+                    <div class="slidebar-item-title">Thư viện</div>
+                </a >
+                <a href="#!" class="slidebar-item ">
+                    <img src="./asset/icon/icon5.svg" alt="">
+                    <div class="slidebar-item-title">Video đã xem</div>
+                </a >
+                <div class="line-1"></div>
+                <div  class="slidebar-item slidebar-item-1">
+                    <p>Hãy đăng nhập để thích video, bình luận và đăng kí kênh.</p>
+                    <div class="action2">
+                        <a href="SignUp.html" class="register-button">
+                            <i class="fa-regular fa-circle-user img-user"></i>
+                            <span class="userspan"> Đăng nhập</span>
+                        </a>
+                    </div>
+                </div >
+                <div class="line-1"></div>
+                <div class="slidebar-item">
+                    <p style="font-size: 16px; margin-top: 10px;">Khám phá</p>
+                </div >
+                <a href="Hot.html" class="slidebar-item">
+                    <img src="./asset/icon/icon6.svg" alt="">
+                    <div class="slidebar-item-title">Thịnh hành</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon7.svg" alt="">
+                    <div class="slidebar-item-title">Âm nhạc</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon8.svg" alt="">   
+                    <div class="slidebar-item-title">Trò chơi</div>
+                </a >
+                <a href="News.html" class="slidebar-item">
+                    <img src="./asset/icon/icon9.svg" alt="">
+                    <div class="slidebar-item-title">Tin tức</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon10.svg" alt="">
+                    <div class="slidebar-item-title">Thể thao</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="slidebar-item" >
+                    <img src="./asset/icon/icon11.svg" alt="">
+                    <div class="slidebar-item-title">Xem qua các kênh</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="slidebar-item">
+                    <p>Dịch vụ khác của youtube</p>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon12.svg" alt="">
+                    <div class="slidebar-item-title">Youtube Premium</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon13.svg" alt="">
+                    <div class="slidebar-item-title">Yoiutube Music</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img class="icon-bar" src="./asset/icon/icon14.svg" alt="">
+                    <div class="slidebar-item-title">Youtube Kids</div>
+                </a >
+                <div class="line-1"></div>
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon15.svg" alt="">
+                    <div class="slidebar-item-title">Cài đặt</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon16.svg" alt="">
+                    <div class="slidebar-item-title">Nhật kí báo cáo</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon17.svg" alt="">
+                    <div class="slidebar-item-title">Trợ giúp</div>
+                </a >
+                <a href="#!" class="slidebar-item">
+                    <img src="./asset/icon/icon18.svg" alt="">
+                    <div class="slidebar-item-title">Gửi ý kiến phản hồi</div>
+                </a >
+                <div class="line-1"></div>
+            </div>
+            <div class="slidebar-1">
+                <a href="./Home.html" class="slidebar-1-item">
+                    <img class="slidebar-img" src="./asset/icon/icon19.svg" alt="">
+                    <div class="slidebar-1-item-title">Trang chủ</div>
+                </a >
+                <a href="#!" class="slidebar-1-item">
+                    <img class="slidebar-img" src="./asset/icon/icon2.svg" alt="">
+                    <div class="slidebar-1-item-title">Shorts</div>
+                </a >
+                <a href="#!" class="slidebar-1-item">
+                    <img class="slidebar-img" src="./asset/icon/icon3.svg" alt="">
+                    <div class="slidebar-1-item-title">Kênh đăng kí</div>
+                </a >
+                <a href="#!" class="slidebar-1-item">
+                    <img class="slidebar-img" src="./asset/icon/icon4.svg" alt="">
+                    <div class="slidebar-1-item-title">Thư viện</div>
+                </a >
+                <a href="#!" class="slidebar-1-item">
+                    <img class="slidebar-img" src="./asset/icon/icon5.svg" alt="">
+                    <div class="slidebar-1-item-title">Video đã xem</div>
+                </a >
+            </div>
+        </div>    
+        <div class="container">
+            <div class="container-item1">
+                <div class="container-item1-1">
+                    <img class="top-background" src="./asset/img/chanel-background.jpg" alt="">
+                </div>
+                <div class="container-item1-2">
+                    <div>
+                        <img class="chanel1" src="./asset/img/bigChanel.jpg" alt="">
+                    </div>
+                    <div>
+                        <p style="font-size: 36px; font-weight: bold;">MixiGaming</p><br>
+                        <p style="color: rgb(58, 58, 58);">@MixiGaming89 ‧ 7,16 Tr người đăng ký ‧ 2,5 N video</p><br>
+                        <a style="color: #4d4d4d; ;" href="#!">- Mình là Độ - </a><br><br>
+                        <p><a class="link" href="facebook.com/dophung1989">facebook.com/dophung1989 </a>và 3 đường liên kết khác</p>
+                        <div style="display: flex; margin-top: 15px;">
+                            <div class="button2">
+                                Đăng ký
+                            </div>
+                            <div class="button1">
+                                Tham gia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <div id="container3-item" class="container3-item">Trang chủ</div>
+                <div class="container3-item">Video</div>
+                <div class="container3-item">Shorts</div>
+                <div class="container3-item">Sự kiện phát trực tiếp</div>
+                <div class="container3-item">Danh sách phát</div>
+                <div class="container3-item">Cộng đồng</div>
+            </div>
+            <div class="line-2"></div>
+            <div class="container-item2">
+                <div class="container-item2-1">
+                    <div style="display: flex; padding: 25px 15px 25px 5px;">
+                        <div style="margin-right: 15px; font-size: 20px; font-weight: bold;">
+                            Video
+                        </div>
+                        <a href="">
+                            <div style="margin-top: 2px;">
+                                <i class="fa-solid fa-play"></i>
+                                Phát tất cả
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="container-item2-1">
+                    <div class="line-1"></div>
+                    <div style="display: flex; padding: 25px 15px 25px 5px;">
+                        <div style="margin-right: 15px; font-size: 20px; font-weight: bold;">
+                            Talkshow | Mixigaming
+                        </div>
+                        <a href="">
+                            <div style="margin-top: 2px;">
+                                <i class="fa-solid fa-play"></i>
+                                Phát tất cả
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class="container-item2-1">
+                    <div class="line-1"></div>
+                    <div style="display: flex; padding: 25px 15px 25px 5px;">
+                        <div style="margin-right: 15px; font-size: 20px; font-weight: bold;">
+                            Among Us | Mixigaming
+                        </div>
+                        <a href="">
+                            <div style="margin-top: 2px;">
+                                <i class="fa-solid fa-play"></i>
+                                Phát tất cả
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <a href="Mixi.html">
+                                    <video class="video" id="myVideo" width="100%" height="55%" controls muted>
+                                        <source src="./asset/video/vid6.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                            <div class="underVideo">
+                                <div class="video-title">
+                                    <div class="video-title-1"><a href="Mixi.html">Mixi Funny Moment #2: Tổng hợp những tình huống vui vui trên stream của Độ Mixi.</a></div>
+                                          <div><span class="video-title-1-span">765 N lượt xem - 10 Ngày trước</span></div>
+                                </div>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./asset/js/script-Chanel.js"></script>
+</body>
+</html>
